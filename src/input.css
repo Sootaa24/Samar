@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@theme {
+  /* Fonts */
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-arial: "Arial", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .font-arial {
+    font-family: var(--font-arial);
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    font-family: var(--font-arial);
+    font-size: 15px;
+    font-weight: 500;
+    background-image: linear-gradient(
+      to right,
+      rgb(245, 95, 141) 0%,
+      rgb(248, 174, 86) 51%,
+      rgb(245, 95, 141) 100%
+    );
+    background-size: 200%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 20px 35px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    border-radius: 30px;
+    outline: none;
+  }
+
+  .btn-gradient:hover {
+    background-position: right center;
+  }
+}
