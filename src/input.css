@@ -15,9 +15,70 @@
   .font-arial {
     font-family: var(--font-arial);
   }
+  @keyframes tilt {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+  }
+
+  .animate-tilt {
+    animation: tilt 5s ease-in-out infinite;
+  }
+
+  @keyframes bounceUpStrong {
+    0% {
+      transform: translateY(20px);
+      opacity: 0.2;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    /* 65% {
+      transform: translateY(5px);
+    } */
+    /* 80% {
+      transform: translateY(-2px);
+    } */
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 @layer components {
+  /* nav animation */
+  .nav-link {
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    color: #070120;
+  }
+
+  .nav-link span {
+    display: inline-block;
+  }
+
+  .nav-link:hover {
+    color: #f55f8d;
+  }
+
+  .nav-link:hover span {
+    animation: bounceUpStrong 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  /* border-image */
+  .border-image:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-image: url("/img/br.png") 1 round;
+  }
+
+  /* button */
   .btn-gradient {
     font-family: var(--font-arial);
     font-size: 15px;
@@ -42,5 +103,71 @@
 
   .btn-gradient:hover {
     background-position: right center;
+  }
+
+  .image-hover-card {
+    @apply relative overflow-hidden;
+  }
+
+  /* overlay */
+  .image-hover-card::before {
+    content: "";
+    @apply absolute inset-0 bg-black/40;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 5;
+  }
+  .image-hover-card:hover::before {
+    opacity: 1;
+  }
+
+  /* lighting */
+  .image-hover-card::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 180%;
+    top: -40%;
+    left: -60%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: translateX(0) rotate(25deg);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.8s ease;
+    mix-blend-mode: screen;
+    z-index: 10;
+  }
+
+  /* hover */
+  .image-hover-card:hover::after {
+    transform: translateX(1200%) rotate(25deg);
+    opacity: 1;
+  }
+
+  /* text */
+  .image-hover-card .hover-info {
+    @apply absolute left-7 bottom-8 opacity-0 text-white z-[20];
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.8s ease;
+  }
+  .image-hover-card:hover .hover-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* icon */
+  .image-hover-card .hover-plus {
+    @apply absolute top-5 right-5 size-[50px] rounded-lg bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center text-white text-xl z-[20];
+    opacity: 0;
+    transform: translate(15px, -15px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .image-hover-card:hover .hover-plus {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }

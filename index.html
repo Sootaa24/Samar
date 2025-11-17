@@ -9,6 +9,7 @@
       type="image/x-icon"
     />
     <title>Samar</title>
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +29,16 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
-    <link rel="stylesheet" href="./css/flaticon/flaticon.css" />
+    <!-- animation css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
@@ -40,7 +50,7 @@
       <div class="py-9">
         <div class="flex items-center justify-between mx-auto max-w-[1199px]">
           <!-- logo -->
-          <div class="flex-shrink-0">
+          <div class="flex-shrink-0 cursor-pointer">
             <img src="./img/logo-2.png" alt="logo" class="h-[55px]" />
           </div>
 
@@ -49,36 +59,40 @@
             <nav class="text-[15px] cursor-pointer font-medium text-[#070120]">
               <ul class="flex gap-[30px]">
                 <li>
-                  <a href="#"
-                    >Home <i class="fa-solid fa-chevron-down text-[9px]"></i
-                  ></a>
+                  <a href="#" class="nav-link">
+                    <span>Home</span>
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    >Pages <i class="fa-solid fa-chevron-down text-[9px]"></i
-                  ></a>
+                  <a href="#" class="nav-link">
+                    <span>Pages</span>
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    >Services <i class="fa-solid fa-chevron-down text-[9px]"></i
-                  ></a>
+                  <a href="#" class="nav-link">
+                    <span>Services</span>
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    >Post Layout
-                    <i class="fa-solid fa-chevron-down text-[9px]"></i
-                  ></a>
+                  <a href="#" class="nav-link">
+                    <span>Post Layout</span>
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    >Blog <i class="fa-solid fa-chevron-down text-[9px]"></i
-                  ></a>
+                  <a href="#" class="nav-link">
+                    <span>Blog</span>
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    >Contact us
-                    <i class="fa-solid fa-chevron-down text-[9px]"></i
-                  ></a>
+                  <a href="#" class="nav-link">
+                    <span>Contact Us</span>
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -146,81 +160,81 @@
 
     <!-- section 2 -->
     <section class="bg-[url(/img/bg2.png)] bg-cover bg-top">
-      <!-- title -->
-      <div
-        class="justify-center text-center mx-auto max-w-[1199px] mt-[115px] mb-10"
-      >
-        <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
-          What We Do Best
-        </p>
-        <h2
-          class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
-        >
-          Our Digital Services
-        </h2>
-      </div>
-
-      <!-- card -->
-      <div
-        class="flex items-center justify-between mx-auto max-w-[1199px] gap-[30px] text-center"
-      >
-        <!-- card 1 -->
-        <div
-          class="rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-[45px] py-[30px] translate-y-0 transition-all duration-500 border-3 border-transparent"
-        >
-          <div>
-            <img
-              src="./img/pic1_3.jpg"
-              alt="Web Development"
-              class="size-[215px] mx-auto"
-            />
-            <h3 class="font-bold text-2xl text-[#262626] my-[15px]">
-              Web Development
-            </h3>
-            <p class="text-[#636363] font-normal">
-              Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent
-              lacus magna, rhoncus quis magna quis.
-            </p>
-          </div>
+      <div class="justify-center text-center mx-auto max-w-[1199px] pt-[115px]">
+        <!-- title -->
+        <div>
+          <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
+            What We Do Best
+          </p>
+          <h2
+            class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+          >
+            Our Digital Services
+          </h2>
         </div>
 
-        <!-- card 2 -->
+        <!-- card -->
         <div
-          class="rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-[45px] py-[30px] translate-y-0 transition-all duration-500 border-3 border-transparent"
+          class="flex items-center justify-between mx-auto max-w-[1199px] gap-[30px] text-center"
         >
-          <div>
-            <img
-              src="./img/pic2_2.jpg"
-              alt="Web Development"
-              class="size-[215px] mx-auto"
-            />
-            <h3 class="font-bold text-2xl text-[#262626] my-[15px]">
-              Strategy & Research
-            </h3>
-            <p class="text-[#636363] font-normal">
-              Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent
-              lacus magna, rhoncus quis magna quis.
-            </p>
+          <!-- card 1 -->
+          <div
+            class="rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-[45px] py-[30px] transition-all duration-500 border-[3px] border-transparent hover:-translate-y-5 border-image"
+          >
+            <div>
+              <img
+                src="./img/pic1_3.jpg"
+                alt="Web Development"
+                class="size-[215px] mx-auto"
+              />
+              <h3 class="font-bold text-2xl text-[#262626] my-[15px]">
+                Web Development
+              </h3>
+              <p class="text-[#636363] font-normal">
+                Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent
+                lacus magna, rhoncus quis magna quis.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <!-- card 3 -->
-        <div
-          class="rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-[45px] py-[30px] translate-y-0 transition-all duration-500 border-3 border-transparent"
-        >
-          <div>
-            <img
-              src="./img/pic3_2.jpg"
-              alt="Web Development"
-              class="size-[215px] mx-auto"
-            />
-            <h3 class="font-bold text-2xl text-[#262626] my-[15px]">
-              Growth Tracking
-            </h3>
-            <p class="text-[#636363] font-normal">
-              Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent
-              lacus magna, rhoncus quis magna quis.
-            </p>
+          <!-- card 2 -->
+          <div
+            class="rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-[45px] py-[30px] transition-all duration-500 border-[3px] border-transparent hover:-translate-y-5 border-image"
+          >
+            <div>
+              <img
+                src="./img/pic2_2.jpg"
+                alt="Web Development"
+                class="size-[215px] mx-auto"
+              />
+              <h3 class="font-bold text-2xl text-[#262626] my-[15px]">
+                Strategy & Research
+              </h3>
+              <p class="text-[#636363] font-normal">
+                Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent
+                lacus magna, rhoncus quis magna quis.
+              </p>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-[45px] py-[30px] transition-all duration-500 border-[3px] border-transparent hover:-translate-y-5 border-image"
+          >
+            <div>
+              <img
+                src="./img/pic3_2.jpg"
+                alt="Web Development"
+                class="size-[215px] mx-auto"
+              />
+              <h3 class="font-bold text-2xl text-[#262626] my-[15px]">
+                Growth Tracking
+              </h3>
+              <p class="text-[#636363] font-normal">
+                Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent
+                lacus magna, rhoncus quis magna quis.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -231,7 +245,7 @@
       class="bg-[url(/img/bg15.png)] bg-right bg-no-repeat bg-[length:100%]"
     >
       <div
-        class="flex justify-between items-center mx-auto max-w-[1199px] mt-[115px] mb-[85px]"
+        class="flex justify-between items-center mx-auto max-w-[1199px] pt-[115px] pb-[85px]"
       >
         <!-- content left -->
         <div class="w-1/2 -ml-[20%]">
@@ -317,7 +331,7 @@
             <i class="fa-regular fa-face-smile text-white text-4xl"></i>
           </div>
           <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
-            18 MI
+            <span class="counter">18</span> MI
           </p>
           <p class="text-[#262626] text-lg">Satisfied Clients</p>
         </div>
@@ -329,7 +343,7 @@
             <i class="fa-solid fa-chart-line text-white text-4xl"></i>
           </div>
           <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
-            20 MI
+            <span class="counter">20</span> MI
           </p>
           <p class="text-[#262626] text-lg">Project Completed</p>
         </div>
@@ -341,7 +355,7 @@
             <i class="fa-solid fa-rocket text-white text-4xl"></i>
           </div>
           <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
-            30 MI
+            <span class="counter">30</span> MI
           </p>
           <p class="text-[#262626] text-lg">Project Lunched</p>
         </div>
@@ -352,7 +366,9 @@
           >
             <i class="fa-solid fa-wand-magic-sparkles text-white text-4xl"></i>
           </div>
-          <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
+          <p
+            class="counter text-[#f55f8d] font-extrabold text-[65px] leading-none"
+          >
             50
           </p>
           <p class="text-[#262626] text-lg">Years Completed</p>
@@ -380,7 +396,7 @@
 
             <!-- item 1 -->
             <div
-              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-3 border-transparent"
+              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56]"
             >
               <!-- icon -->
               <div>
@@ -400,7 +416,7 @@
 
             <!-- item 2 -->
             <div
-              class="flex items-center w-[550px] h-[150px] ml-[50px] mt-[30px] mb-[30px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-3 border-transparent"
+              class="flex items-center w-[550px] h-[150px] ml-[50px] mt-[30px] mb-[30px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56]"
             >
               <!-- icon -->
               <div>
@@ -420,7 +436,7 @@
 
             <!-- item 3 -->
             <div
-              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-3 border-transparent"
+              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56]"
             >
               <!-- icon -->
               <div>
@@ -440,7 +456,7 @@
           </div>
         </div>
         <!-- content right -->
-        <div class="-mr-[10%]">
+        <div class="-mr-[10%] animate-tilt">
           <img
             src="./img/pic3.png"
             alt="Behind The Story Of Samar Agency"
@@ -468,57 +484,147 @@
           class="grid grid-cols-[repeat(2,1fr)_1.5fr] grid-rows-[450px_200px_300px] gap-[35px]"
         >
           <!-- item 1 -->
-          <div class="col-span-2 rounded-lg overflow-hidden">
+          <div class="image-hover-card col-span-2 rounded-lg overflow-hidden">
             <img
               src="./img/pic1_2.jpg"
               alt="Software Landing"
               class="w-full h-full object-cover"
             />
+            <!-- text -->
+            <div class="hover-info flex flex-col items-start">
+              <p class="text-xl font-bold">Software Landing</p>
+              <p class="text-sm text-gray-300">By Jhone Doe</p>
+            </div>
+            <!-- + icon -->
+            <div class="hover-plus">
+              <a
+                href="./img/pic1_2.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
           </div>
 
           <!-- item 2 -->
-          <div class="rounded-lg overflow-hidden">
+          <div class="image-hover-card rounded-lg overflow-hidden">
             <img
               src="./img/pic2_1.jpg"
               alt="Software Landing"
               class="w-full h-full object-cover"
             />
+            <!-- text -->
+            <div class="hover-info flex flex-col items-start">
+              <p class="text-xl font-bold">Software Landing</p>
+              <p class="text-sm text-gray-300">By Jhone Doe</p>
+            </div>
+            <!-- + icon -->
+            <div class="hover-plus">
+              <a
+                href="./img/pic2_1.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
           </div>
 
           <!-- item 3 -->
-          <div>
+          <div class="image-hover-card">
             <img
               src="./img/pic3_1.jpg"
               alt="Software Landing"
               class="w-full h-full object-cover rounded-lg"
             />
+            <!-- text -->
+            <div class="hover-info flex flex-col items-start">
+              <p class="text-xl font-bold">Software Landing</p>
+              <p class="text-sm text-gray-300">By Jhone Doe</p>
+            </div>
+            <!-- + icon -->
+            <div class="hover-plus">
+              <a
+                href="./img/pic3_1.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
           </div>
 
           <!-- item 4 -->
-          <div>
+          <div class="image-hover-card">
             <img
               src="./img/pic4.jpg"
               alt="Software Landing"
               class="w-full h-full object-cover rounded-lg"
             />
+            <!-- text -->
+            <div class="hover-info flex flex-col items-start">
+              <p class="text-xl font-bold">Software Landing</p>
+              <p class="text-sm text-gray-300">By Jhone Doe</p>
+            </div>
+            <!-- + icon -->
+            <div class="hover-plus">
+              <a
+                href="./img/pic4.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </a>
+            </div>
           </div>
 
           <!-- item 5 -->
-          <div class="row-span-2 rounded-lg overflow-hidden">
+          <div class="image-hover-card row-span-2 rounded-lg overflow-hidden">
             <img
               src="./img/pic6.jpg"
               alt="Software Landing"
               class="w-full h-full object-cover"
             />
+            <!-- text -->
+            <div class="hover-info flex flex-col items-start">
+              <p class="text-xl font-bold">Software Landing</p>
+              <p class="text-sm text-gray-300">By Jhone Doe</p>
+            </div>
+            <!-- + icon -->
+            <div class="hover-plus">
+              <a
+                href="./img/pic6.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <i class="fa-solid fa-plus"></i
+              ></a>
+            </div>
           </div>
 
           <!-- item 6 -->
-          <div class="col-span-2 rounded-lg overflow-hidden">
+          <div class="image-hover-card col-span-2 rounded-lg overflow-hidden">
             <img
               src="./img/pic5.jpg"
               alt="Software Landing"
               class="w-full h-full object-cover"
             />
+            <!-- text -->
+            <div class="hover-info flex flex-col items-start">
+              <p class="text-xl font-bold">Software Landing</p>
+              <p class="text-sm text-gray-300">By Jhone Doe</p>
+            </div>
+            <!-- + icon -->
+            <div class="hover-plus">
+              <a
+                href="./img/pic5.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <i class="fa-solid fa-plus"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -886,5 +992,33 @@
         </div>
       </div>
     </footer>
+
+    <!-- JS -->
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- waypoints -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/counting-up/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    </script>
   </body>
 </html>
