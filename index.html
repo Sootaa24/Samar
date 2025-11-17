@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samart</title>
+    <link
+      rel="shortcut icon"
+      href="https://cybersamar-v2.vercel.app/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Samar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,115 +23,129 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="path/to/flaticon.css" />
+    <!-- line awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/flaticon/flaticon.css" />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
     <!-- header -->
-    <header class="py-9">
-      <div class="flex items-center justify-between mx-auto max-w-[1199px]">
-        <!-- logo -->
-        <div class="flex-shrink-0">
-          <img src="./img/logo-2.png" alt="logo" class="h-[55px]" />
-        </div>
-
-        <div class="flex items-center gap-12">
-          <!-- navigation -->
-          <nav class="text-[15px] cursor-pointer font-medium text-[#070120]">
-            <ul class="flex gap-[30px]">
-              <li>
-                <a href="#"
-                  >Home <i class="fa-solid fa-chevron-down text-[9px]"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  >Pages <i class="fa-solid fa-chevron-down text-[9px]"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  >Services <i class="fa-solid fa-chevron-down text-[9px]"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  >Post Layout
-                  <i class="fa-solid fa-chevron-down text-[9px]"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  >Blog <i class="fa-solid fa-chevron-down text-[9px]"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  >Contact us <i class="fa-solid fa-chevron-down text-[9px]"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- button -->
-          <button class="btn-gradient">GET A QUOTE</button>
-        </div>
-      </div>
-    </header>
-
-    <!-- section 1 -->
-    <section
-      class="flex justify-between items-center mx-auto max-w-[1199px] mt-12"
+    <div
+      class="bg-[url(/img/pic2.png)] overflow-hidden bg-top bg-[length:100%]"
     >
-      <div class="w-[80%]">
-        <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
-          We are The Best
-        </p>
-        <h2
-          class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
-        >
-          Freelance Product Designer Running
-        </h2>
-        <p class="text-[#636363] text-lg mb-[25px]">
-          We develop the relationships that underpin the next phase in your
-          <br />
-          organisation’s growth.
-        </p>
-
-        <!-- Item 1 -->
-        <div class="flex items-center gap-4 mb-5">
-          <div
-            class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
-          >
-            <i class="fa-solid fa-check text-white text-xl"></i>
+      <!-- header -->
+      <div class="py-9">
+        <div class="flex items-center justify-between mx-auto max-w-[1199px]">
+          <!-- logo -->
+          <div class="flex-shrink-0">
+            <img src="./img/logo-2.png" alt="logo" class="h-[55px]" />
           </div>
-          <p class="text-gray-600 text-xl">Master's degree in designing</p>
+
+          <div class="flex items-center gap-12">
+            <!-- navigation -->
+            <nav class="text-[15px] cursor-pointer font-medium text-[#070120]">
+              <ul class="flex gap-[30px]">
+                <li>
+                  <a href="#"
+                    >Home <i class="fa-solid fa-chevron-down text-[9px]"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Pages <i class="fa-solid fa-chevron-down text-[9px]"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Services <i class="fa-solid fa-chevron-down text-[9px]"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Post Layout
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Blog <i class="fa-solid fa-chevron-down text-[9px]"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Contact us
+                    <i class="fa-solid fa-chevron-down text-[9px]"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- button -->
+            <button class="btn-gradient">GET A QUOTE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 1 -->
+      <section
+        class="flex justify-between items-center mx-auto max-w-[1199px] mt-12"
+      >
+        <!-- content left -->
+        <div class="w-[80%]">
+          <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
+            We are The Best
+          </p>
+          <h2
+            class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+          >
+            Freelance Product Designer Running
+          </h2>
+          <p class="text-[#636363] text-lg mb-[25px]">
+            We develop the relationships that underpin the next phase in your
+            <br />
+            organisation’s growth.
+          </p>
+
+          <!-- Item 1 -->
+          <div class="flex items-center gap-4 mb-5">
+            <div
+              class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
+            >
+              <i class="fa-solid fa-check text-white text-xl"></i>
+            </div>
+            <p class="text-gray-600 text-xl">Master's degree in designing</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex items-center gap-4 mb-5">
+            <div
+              class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
+            >
+              <i class="fa-solid fa-check text-white text-xl"></i>
+            </div>
+            <p class="text-gray-600 text-xl">Outstanding mobile design</p>
+          </div>
+
+          <!-- Btn -->
+          <button class="btn-gradient">GET STARTED</button>
         </div>
 
-        <!-- Item 2 -->
-        <div class="flex items-center gap-4 mb-5">
-          <div
-            class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
-          >
-            <i class="fa-solid fa-check text-white text-xl"></i>
-          </div>
-          <p class="text-gray-600 text-xl">Outstanding mobile design</p>
+        <!-- content right -->
+        <div class="w-1/2">
+          <img
+            src="./img/pic3_1.png"
+            alt="Designer"
+            class="w-[130%] max-w-none h-auto object-cover"
+          />
         </div>
-
-        <!-- Btn -->
-        <button class="btn-gradient">GET STARTED</button>
-      </div>
-      <div class="w-1/2">
-        <img
-          src="./img/pic3_1.png"
-          alt="Designer"
-          class="w-[130%] max-w-none h-auto object-cover"
-        />
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- section 2 -->
-    <section class="mb-[15px]">
+    <section class="bg-[url(/img/bg2.png)] bg-cover bg-top">
       <!-- title -->
       <div
         class="justify-center text-center mx-auto max-w-[1199px] mt-[115px] mb-10"
@@ -208,86 +228,91 @@
 
     <!-- section 3 -->
     <section
-      class="flex justify-between items-center mx-auto max-w-[1199px] mt-[115px] mb-[85px]"
+      class="bg-[url(/img/bg15.png)] bg-right bg-no-repeat bg-[length:100%]"
     >
-      <div class="w-1/2 -ml-[20%]">
-        <img
-          src="./img/pic1.jpg"
-          alt="Designer"
-          class="w-[130%] max-w-none h-auto object-cover rounded-r-[100px]"
-        />
-      </div>
-
-      <div class="w-1/2">
-        <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">About Us</p>
-        <h2
-          class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
-        >
-          Build Your Business Website Better
-        </h2>
-        <p class="text-[#636363] text-base mb-[25px]">
-          Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras
-          eu velit enim. Vivamus blandit, dolor ut aliquet rutrum, ex elit
-          mattis sapien, non molestie felis neque et nulla. Sed euismod turpis
-          id nibh suscipit semper. Pellentesque dapibus risus arcu.
-        </p>
-
-        <!-- Item 1 -->
-        <div class="flex items-center gap-4 mb-5">
-          <i
-            class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
-          ></i>
-          <p class="text-gray-600 text-base">
-            We support programs that create advancement opportunities for
-            people.
-          </p>
+      <div
+        class="flex justify-between items-center mx-auto max-w-[1199px] mt-[115px] mb-[85px]"
+      >
+        <!-- content left -->
+        <div class="w-1/2 -ml-[20%]">
+          <img
+            src="./img/pic1.jpg"
+            alt="Designer"
+            class="w-[130%] max-w-none h-auto object-cover rounded-r-[100px]"
+          />
         </div>
 
-        <!-- Item 2 -->
-        <div class="flex items-center gap-4 mb-5">
-          <i
-            class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
-          ></i>
-          <p class="text-gray-600 text-base">
-            Get a view of events and trends. Be updated on our recent news.
+        <!-- content right -->
+        <div class="w-1/2">
+          <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">About Us</p>
+          <h2
+            class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+          >
+            Build Your Business Website Better
+          </h2>
+          <p class="text-[#636363] text-base mb-[25px]">
+            Proin laoreet leo vel enim gravida, at porttitor metus ultricies.
+            Cras eu velit enim. Vivamus blandit, dolor ut aliquet rutrum, ex
+            elit mattis sapien, non molestie felis neque et nulla. Sed euismod
+            turpis id nibh suscipit semper. Pellentesque dapibus risus arcu.
           </p>
-        </div>
 
-        <!-- Item 3 -->
-        <div class="flex items-center gap-4 mb-5">
-          <i
-            class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
-          ></i>
-          <p class="text-gray-600 text-base">
-            Finally, it all comes down to people. Creating a winning team.
-          </p>
-        </div>
+          <!-- Item 1 -->
+          <div class="flex items-center gap-4 mb-5">
+            <i
+              class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
+            ></i>
+            <p class="text-gray-600 text-base">
+              We support programs that create advancement opportunities for
+              people.
+            </p>
+          </div>
 
-        <!-- Item 4 -->
-        <div class="flex items-center gap-4 mb-5">
-          <i
-            class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
-          ></i>
-          <p class="text-gray-600 text-lg">
-            We support programs that create advancement opportunities for
-            people.
-          </p>
-        </div>
+          <!-- Item 2 -->
+          <div class="flex items-center gap-4 mb-5">
+            <i
+              class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
+            ></i>
+            <p class="text-gray-600 text-base">
+              Get a view of events and trends. Be updated on our recent news.
+            </p>
+          </div>
 
-        <!-- Btn -->
-        <button class="btn-gradient">LEARN MORE</button>
+          <!-- Item 3 -->
+          <div class="flex items-center gap-4 mb-5">
+            <i
+              class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
+            ></i>
+            <p class="text-gray-600 text-base">
+              Finally, it all comes down to people. Creating a winning team.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="flex items-center gap-4 mb-5">
+            <i
+              class="fa-regular fa-circle-check text-[24px] bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] bg-clip-text text-transparent"
+            ></i>
+            <p class="text-gray-600 text-base">
+              Get a view of events and trends. Be updated on our recent news.
+            </p>
+          </div>
+
+          <!-- Btn -->
+          <button class="btn-gradient">LEARN MORE</button>
+        </div>
       </div>
     </section>
 
     <!-- section 4 -->
     <section
-      class="bg-[url(/img/bg14.png)] bg-cover bg-center w-screen h-[318.8px] pt-20 pb-[50px]"
+      class="bg-[url(/img/bg14.png)] bg-cover bg-center h-[318.8px] pt-20 pb-[50px]"
     >
       <!-- number item 1 -->
       <div class="flex items-center justify-around mx-auto max-w-[1199px]">
         <div class="text-center">
           <div
-            class="w-20 h-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
+            class="size-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
           >
             <i class="fa-regular fa-face-smile text-white text-4xl"></i>
           </div>
@@ -299,9 +324,9 @@
         <!-- number item 2 -->
         <div class="text-center">
           <div
-            class="w-20 h-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
+            class="size-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
           >
-            <i class="fa-regular fa-face-smile text-white text-4xl"></i>
+            <i class="fa-solid fa-chart-line text-white text-4xl"></i>
           </div>
           <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
             20 MI
@@ -311,9 +336,9 @@
         <!-- number item 3 -->
         <div class="text-center">
           <div
-            class="w-20 h-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
+            class="size-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
           >
-            <i class="fa-regular fa-face-smile text-white text-4xl"></i>
+            <i class="fa-solid fa-rocket text-white text-4xl"></i>
           </div>
           <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
             30 MI
@@ -323,9 +348,9 @@
         <!-- number item 4 -->
         <div class="text-center">
           <div
-            class="w-20 h-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
+            class="size-20 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center mx-auto mb-[15px]"
           >
-            <i class="fa-regular fa-face-smile text-white text-4xl"></i>
+            <i class="fa-solid fa-wand-magic-sparkles text-white text-4xl"></i>
           </div>
           <p class="text-[#f55f8d] font-extrabold text-[65px] leading-none">
             50
@@ -334,5 +359,532 @@
         </div>
       </div>
     </section>
+
+    <!-- section 5 -->
+    <section
+      class="bg-[url(/img/bg2.png)] bg-[length:100%] bg-center bg-no-repeat h-[882.92px] pt-[115px]"
+    >
+      <div class="flex justify-between items-center mx-auto max-w-[1199px]">
+        <!-- content left -->
+        <div class="w-1/2">
+          <!-- title -->
+          <div>
+            <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
+              Our Features
+            </p>
+            <h2
+              class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+            >
+              Behind The Story Of Samar Agency
+            </h2>
+
+            <!-- item 1 -->
+            <div
+              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-3 border-transparent"
+            >
+              <!-- icon -->
+              <div>
+                <img src="./img/idea.png" alt="" />
+              </div>
+              <!-- content -->
+              <div class="pl-[25px]">
+                <h3 class="text-[#262626] text-2xl font-extrabold">
+                  Idea & Analysis Gathering
+                </h3>
+                <p class="text-[#636363] text-base font-normal">
+                  Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl
+                  leo, sit amet consequat augue.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div
+              class="flex items-center w-[550px] h-[150px] ml-[50px] mt-[30px] mb-[30px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-3 border-transparent"
+            >
+              <!-- icon -->
+              <div>
+                <img src="./img/coding.png" alt="" />
+              </div>
+              <!-- content -->
+              <div class="pl-[25px]">
+                <h3 class="text-[#262626] text-2xl font-extrabold">
+                  Design & Developing
+                </h3>
+                <p class="text-[#636363] text-base font-normal">
+                  Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl
+                  leo, sit amet consequat augue..
+                </p>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div
+              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-3 border-transparent"
+            >
+              <!-- icon -->
+              <div>
+                <img src="./img/rocket.png" alt="" />
+              </div>
+              <!-- content -->
+              <div class="pl-[25px]">
+                <h3 class="text-[#262626] text-2xl font-extrabold">
+                  Idea & Analysis Gathering
+                </h3>
+                <p class="text-[#636363] text-base font-normal">
+                  Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl
+                  leo, sit amet consequat augue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content right -->
+        <div class="-mr-[10%]">
+          <img
+            src="./img/pic3.png"
+            alt="Behind The Story Of Samar Agency"
+            class="w-[690px] h-[675px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- section 6 -->
+    <section
+      class="bg-[url(/img/bg17.png)] bg-cover bg-top overflow-hidden pt-[115px]"
+    >
+      <div class="justify-center text-center mx-auto max-w-[1199px]">
+        <!-- title -->
+        <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">Portfolio</p>
+        <h2
+          class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+        >
+          Our Latest Work
+        </h2>
+
+        <!-- image item -->
+        <div
+          class="grid grid-cols-[repeat(2,1fr)_1.5fr] grid-rows-[450px_200px_300px] gap-[35px]"
+        >
+          <!-- item 1 -->
+          <div class="col-span-2 rounded-lg overflow-hidden">
+            <img
+              src="./img/pic1_2.jpg"
+              alt="Software Landing"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- item 2 -->
+          <div class="rounded-lg overflow-hidden">
+            <img
+              src="./img/pic2_1.jpg"
+              alt="Software Landing"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- item 3 -->
+          <div>
+            <img
+              src="./img/pic3_1.jpg"
+              alt="Software Landing"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+
+          <!-- item 4 -->
+          <div>
+            <img
+              src="./img/pic4.jpg"
+              alt="Software Landing"
+              class="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+
+          <!-- item 5 -->
+          <div class="row-span-2 rounded-lg overflow-hidden">
+            <img
+              src="./img/pic6.jpg"
+              alt="Software Landing"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- item 6 -->
+          <div class="col-span-2 rounded-lg overflow-hidden">
+            <img
+              src="./img/pic5.jpg"
+              alt="Software Landing"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 7 -->
+    <section
+      class="bg-[url(/img/bg16.png)] bg-auto h-[795.5px] pt-20 pb-[50px]"
+    >
+      <div class="justify-center text-center mx-auto max-w-[1199px]">
+        <!-- title -->
+        <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">Our Blog</p>
+        <h2
+          class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+        >
+          Latest News & Blog
+        </h2>
+
+        <!-- item -->
+        <div class="flex justify-between">
+          <!-- item 1 -->
+          <div class="text-left bg-[rgba(245,95,141,0.1)] rounded-lg w-[380px]">
+            <!-- img1 -->
+            <div class="relative">
+              <img
+                src="./img/pic2.jpg"
+                alt=""
+                class="rounded-lg w-full h-auto"
+              />
+              <!-- date -->
+              <div
+                class="btn-gradient rounded-md px-5 py-[10px] text-sm font-sans absolute -bottom-5 left-[15px]"
+              >
+                23 MARCH 2022
+              </div>
+            </div>
+
+            <!-- content -->
+            <div class="text-[#636363] pt-[30px] px-[15px] pb-5 mb-5">
+              <h3 class="text-2xl font-bold text-[#262626]">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <p>
+                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac
+                aliquam. Phasellus justo quam.
+              </p>
+            </div>
+
+            <!-- blog footer -->
+            <div
+              class="flex text-[#636363] text-sm p-[15px] border-t border-[rgba(0,0,0,0.05)]"
+            >
+              <div class="flex justify-center items-center mr-5">
+                <div>
+                  <i class="las la-user-circle text-3xl text-[#f55f8d]"></i>
+                </div>
+                <p>BY <span class="text-[#f55f8d]">JOHNE DOE</span></p>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <div>
+                  <i class="las la-comment text-3xl text-[#f55f8d]"></i>
+                </div>
+                <p>COMMENTS 15</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="text-left bg-[rgba(245,95,141,0.1)] rounded-lg w-[380px]">
+            <!-- img1 -->
+            <div class="relative">
+              <img
+                src="./img/pic3.jpg"
+                alt=""
+                class="rounded-lg w-full h-auto"
+              />
+              <!-- date -->
+              <div
+                class="btn-gradient rounded-md px-5 py-[10px] text-sm font-sans absolute -bottom-5 left-[15px]"
+              >
+                23 MARCH 2022
+              </div>
+            </div>
+
+            <!-- content -->
+            <div class="text-[#636363] pt-[30px] px-[15px] pb-5 mb-5">
+              <h3 class="text-2xl font-bold text-[#262626]">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <p>
+                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac
+                aliquam. Phasellus justo quam.
+              </p>
+            </div>
+
+            <!-- blog footer -->
+            <div
+              class="flex text-[#636363] text-sm p-[15px] border-t border-[rgba(0,0,0,0.05)]"
+            >
+              <div class="flex justify-center items-center mr-5">
+                <div>
+                  <i class="las la-user-circle text-3xl text-[#f55f8d]"></i>
+                </div>
+                <p>BY <span class="text-[#f55f8d]">JOHNE DOE</span></p>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <div>
+                  <i class="las la-comment text-3xl text-[#f55f8d]"></i>
+                </div>
+                <p>COMMENTS 15</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="text-left bg-[rgba(245,95,141,0.1)] rounded-lg w-[380px]">
+            <!-- img1 -->
+            <div class="relative">
+              <img
+                src="./img/pic1_1.jpg"
+                alt=""
+                class="rounded-lg w-full h-auto"
+              />
+              <!-- date -->
+              <div
+                class="btn-gradient rounded-md px-5 py-[10px] text-sm font-sans absolute -bottom-5 left-[15px]"
+              >
+                23 MARCH 2022
+              </div>
+            </div>
+
+            <!-- content -->
+            <div class="text-[#636363] pt-[30px] px-[15px] pb-5 mb-5">
+              <h3 class="text-2xl font-bold text-[#262626]">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <p>
+                Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac
+                aliquam. Phasellus justo quam.
+              </p>
+            </div>
+
+            <!-- blog footer -->
+            <div
+              class="flex text-[#636363] text-sm p-[15px] border-t border-[rgba(0,0,0,0.05)]"
+            >
+              <div class="flex justify-center items-center mr-5">
+                <div>
+                  <i class="las la-user-circle text-3xl text-[#f55f8d]"></i>
+                </div>
+                <p>BY <span class="text-[#f55f8d]">JOHNE DOE</span></p>
+              </div>
+
+              <div class="flex justify-center items-center">
+                <div>
+                  <i class="las la-comment text-3xl text-[#f55f8d]"></i>
+                </div>
+                <p>COMMENTS 15</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[url(/img/pattern2.png)] bg-cover bg-center">
+      <!-- newsletter section -->
+      <div
+        class="mx-auto max-w-[1199px] rounded-[10px] flex items-center justify-center bg-[url(/img/pattern3.png)] bg-no-repeat bg-bottom bg-[length:100%]"
+      >
+        <div class="flex items-center gap-44 px-[60px] py-[50px]">
+          <h2 class="text-[#262626] text-[28px] font-semibold">
+            Subscribe To Our Newsletter
+          </h2>
+          <div class="flex items-center justify-center">
+            <input
+              type="text"
+              placeholder="Your Email Address"
+              class="p-5 w-[450px] bg-white rounded-l-md text-[15px] placeholder:text-[#888] font-normal border border-white outline-none"
+            />
+            <button
+              class="btn-gradient text-[20px] rounded-l-none rounded-r-md font-sans"
+            >
+              <i class="las la-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div class="bg-[#0E1B1F] py-[70px]">
+        <div class="max-w-[1199px] rounded-[10px] mx-auto flex">
+          <!-- item 1 -->
+          <div class="flex-1">
+            <a href="#"><img src="./img/logo-white.png" alt="logo" /></a>
+            <ul class="text-white">
+              <li class="flex gap-[10px] items-center py-2">
+                <div
+                  class="size-10 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center"
+                >
+                  <i class="fa fa-phone"></i>
+                </div>
+                <span class="text-[15px]"
+                  >1800-123-4567 <br />+91 987-654-3210
+                </span>
+              </li>
+              <li class="flex gap-[10px] items-center py-2">
+                <div
+                  class="size-10 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center"
+                >
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <span class="text-[15px]"
+                  >info@example.com <br />services@gmail.com
+                </span>
+              </li>
+              <li class="flex gap-[10px] items-center py-2">
+                <div
+                  class="size-10 rounded-full bg-gradient-to-r from-[#f55f8d] to-[#f8ae56] flex items-center justify-center"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <span class="text-[15px]"
+                  >Demo Address #8901 Marmora <br />Road City
+                </span>
+              </li>
+            </ul>
+          </div>
+          <!-- item 2 -->
+          <div class="text-white flex-1">
+            <h3
+              class="text-white text-2xl font-bold mb-[30px] pb-[10px] relative"
+            >
+              Our links
+              <span
+                class="absolute bottom-0 left-0 h-[4px] w-[15px] rounded-[20px] bg-gradient-to-r from-[#f55f8d] to-[#f8ae56]"
+              ></span>
+              <span
+                class="absolute bottom-0 left-5 h-[4px] w-[45px] rounded-[20px] bg-gradient-to-r from-[#f55f8d] to-[#f8ae56]"
+              ></span>
+            </h3>
+            <ul class="text-[#636363]">
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>Team</a>
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+              </li>
+            </ul>
+          </div>
+          <!-- item 3 -->
+          <div class="text-white flex-1">
+            <h3
+              class="text-white text-2xl font-bold mb-[30px] pb-[10px] relative"
+            >
+              Our Services
+              <span
+                class="absolute bottom-0 left-0 h-[4px] w-[15px] rounded-[20px] bg-gradient-to-r from-[#f55f8d] to-[#f8ae56]"
+              ></span>
+              <span
+                class="absolute bottom-0 left-5 h-[4px] w-[45px] rounded-[20px] bg-gradient-to-r from-[#f55f8d] to-[#f8ae56]"
+              ></span>
+            </h3>
+            <ul class="text-[#636363]">
+              <li class="py-2">
+                <a href="#"
+                  ><i class="fa fa-angle-right mr-2"></i>Strategy & Research</a
+                >
+              </li>
+              <li class="py-2">
+                <a href="#"
+                  ><i class="fa fa-angle-right mr-2"></i>Web Development</a
+                >
+              </li>
+              <li class="py-2">
+                <a href="#"
+                  ><i class="fa fa-angle-right mr-2"></i> Web Solution</a
+                >
+              </li>
+              <li class="py-2">
+                <a href="#"
+                  ><i class="fa fa-angle-right mr-2"></i>Digital Marketing</a
+                >
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>App Design</a>
+              </li>
+            </ul>
+          </div>
+          <!-- item 4 -->
+          <div class="text-white flex-1">
+            <h3
+              class="text-white text-2xl font-bold mb-[30px] pb-[10px] relative"
+            >
+              Other links
+              <span
+                class="absolute bottom-0 left-0 h-[4px] w-[15px] rounded-[20px] bg-gradient-to-r from-[#f55f8d] to-[#f8ae56]"
+              ></span>
+              <span
+                class="absolute bottom-0 left-5 h-[4px] w-[45px] rounded-[20px] bg-gradient-to-r from-[#f55f8d] to-[#f8ae56]"
+              ></span>
+            </h3>
+            <ul class="text-[#636363]">
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>Portfolio</a>
+              </li>
+              <li class="py-2">
+                <a href="#"
+                  ><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a
+                >
+              </li>
+              <li class="py-2">
+                <a href="#"
+                  ><i class="fa fa-angle-right mr-2"></i>Terms & Conditions</a
+                >
+              </li>
+              <li class="py-2">
+                <a href="#"><i class="fa fa-angle-right mr-2"></i>Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- copy right section -->
+      <div class="bg-[#1f343b] py-[10px] text-white">
+        <div class="max-w-[1199px] rounded-[10px] mx-auto flex justify-between">
+          <!-- footer left -->
+          <p>
+            Copyright © 2021 <span class="text-[#f55f8d]">DexignZone</span> .
+            All rights reserved.
+          </p>
+          <!-- footer right -->
+          <div class="flex gap-1">
+            <a
+              href="#"
+              class="size-8 bg-[#FFFFFF1A] rounded-full flex items-center justify-center text-[14px] hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56] transition-all duration-500"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="size-8 bg-[#FFFFFF1A] rounded-full flex items-center justify-center text-[14px] hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56] transition-all duration-500"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="size-8 bg-[#FFFFFF1A] rounded-full flex items-center justify-center text-[14px] hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56] transition-all duration-500"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
