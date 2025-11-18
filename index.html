@@ -39,6 +39,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
     />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
@@ -109,46 +114,65 @@
       >
         <!-- content left -->
         <div class="w-[80%]">
-          <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
+          <p
+            class="text-[#f55f8d] text-[22px] font-semibold mb-5 wow animate__animated animate__fadeInUp"
+          >
             We are The Best
           </p>
           <h2
-            class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+            class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5 wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.5s"
           >
             Freelance Product Designer Running
           </h2>
-          <p class="text-[#636363] text-lg mb-[25px]">
+          <p
+            class="text-[#636363] text-lg mb-[25px] wow animate__animated animate__fadeInUp"
+            data-wow-delay="1s"
+          >
             We develop the relationships that underpin the next phase in your
             <br />
             organisation’s growth.
           </p>
 
           <!-- Item 1 -->
-          <div class="flex items-center gap-4 mb-5">
-            <div
-              class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
-            >
-              <i class="fa-solid fa-check text-white text-xl"></i>
+          <div
+            class="wow animate__animated animate__fadeInUp"
+            data-wow-delay="1.5s"
+          >
+            <div class="flex items-center gap-4 mb-5">
+              <div
+                class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
+              >
+                <i class="fa-solid fa-check text-white text-xl"></i>
+              </div>
+              <p class="text-gray-600 text-xl">Master's degree in designing</p>
             </div>
-            <p class="text-gray-600 text-xl">Master's degree in designing</p>
-          </div>
 
-          <!-- Item 2 -->
-          <div class="flex items-center gap-4 mb-5">
-            <div
-              class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
-            >
-              <i class="fa-solid fa-check text-white text-xl"></i>
+            <!-- Item 2 -->
+            <div class="flex items-center gap-4 mb-5">
+              <div
+                class="size-[35px] rounded-full bg-gradient-to-r from-[#ff6b9d] to-[#ffa07a] flex items-center justify-center"
+              >
+                <i class="fa-solid fa-check text-white text-xl"></i>
+              </div>
+              <p class="text-gray-600 text-xl">Outstanding mobile design</p>
             </div>
-            <p class="text-gray-600 text-xl">Outstanding mobile design</p>
           </div>
 
           <!-- Btn -->
-          <button class="btn-gradient">GET STARTED</button>
+          <button
+            class="btn-gradient wow animate__animated animate__fadeInUp"
+            data-wow-delay="2s"
+          >
+            GET STARTED
+          </button>
         </div>
 
         <!-- content right -->
-        <div class="w-1/2">
+        <div
+          class="w-1/2 wow animate__animated animate__fadeInUp"
+          data-wow-delay="1.5s"
+        >
           <img
             src="./img/pic3_1.png"
             alt="Designer"
@@ -248,7 +272,10 @@
         class="flex justify-between items-center mx-auto max-w-[1199px] pt-[115px] pb-[85px]"
       >
         <!-- content left -->
-        <div class="w-1/2 -ml-[20%]">
+        <div
+          class="w-1/2 -ml-[20%] wow animate__animated animate__fadeInLeft"
+          data-wow-delay="0.5s"
+        >
           <img
             src="./img/pic1.jpg"
             alt="Designer"
@@ -257,7 +284,10 @@
         </div>
 
         <!-- content right -->
-        <div class="w-1/2">
+        <div
+          class="w-1/2 wow animate__animated animate__fadeInRight"
+          data-wow-delay="0.5s"
+        >
           <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">About Us</p>
           <h2
             class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
@@ -385,25 +415,31 @@
         <div class="w-1/2">
           <!-- title -->
           <div>
-            <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
-              Our Features
-            </p>
-            <h2
-              class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+            <div
+              class="wow animate__animated animate__fadeInLeft"
+              data-wow-delay="0.5s"
             >
-              Behind The Story Of Samar Agency
-            </h2>
+              <p class="text-[#f55f8d] text-[22px] font-semibold mb-5">
+                Our Features
+              </p>
+              <h2
+                class="text-[#262626] text-[70px] font-extrabold leading-[1.1] mb-5"
+              >
+                Behind The Story Of Samar Agency
+              </h2>
+            </div>
 
             <!-- item 1 -->
             <div
-              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56]"
+              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56] hover:text-white group wow animate__animated animate__fadeInRight"
+              data-wow-delay="0.5s"
             >
               <!-- icon -->
               <div>
                 <img src="./img/idea.png" alt="" />
               </div>
               <!-- content -->
-              <div class="pl-[25px]">
+              <div class="pl-[25px] hover:text-white">
                 <h3 class="text-[#262626] text-2xl font-extrabold">
                   Idea & Analysis Gathering
                 </h3>
@@ -416,7 +452,8 @@
 
             <!-- item 2 -->
             <div
-              class="flex items-center w-[550px] h-[150px] ml-[50px] mt-[30px] mb-[30px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56]"
+              class="flex items-center w-[550px] h-[150px] ml-[50px] mt-[30px] mb-[30px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56] wow animate__animated animate__fadeInRight"
+              data-wow-delay="0.75s"
             >
               <!-- icon -->
               <div>
@@ -436,7 +473,8 @@
 
             <!-- item 3 -->
             <div
-              class="flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56]"
+              class="group flex items-center w-[550px] h-[150px] rounded-lg bg-white shadow-[0_0_60px_0_rgba(0,0,0,0.1)] px-5 py-6 translate-y-0 transition-all duration-500 border-transparent hover:bg-gradient-to-r hover:from-[#f55f8d] hover:to-[#f8ae56] wow animate__animated animate__fadeInRight"
+              data-wow-delay="1s"
             >
               <!-- icon -->
               <div>
@@ -444,10 +482,14 @@
               </div>
               <!-- content -->
               <div class="pl-[25px]">
-                <h3 class="text-[#262626] text-2xl font-extrabold">
+                <h3
+                  class="text-[#262626] text-2xl font-extrabold group-hover:text-white"
+                >
                   Idea & Analysis Gathering
                 </h3>
-                <p class="text-[#636363] text-base font-normal">
+                <p
+                  class="text-[#636363] text-base font-normal group-hover:text-white"
+                >
                   Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl
                   leo, sit amet consequat augue.
                 </p>
@@ -484,7 +526,10 @@
           class="grid grid-cols-[repeat(2,1fr)_1.5fr] grid-rows-[450px_200px_300px] gap-[35px]"
         >
           <!-- item 1 -->
-          <div class="image-hover-card col-span-2 rounded-lg overflow-hidden">
+          <div
+            class="image-hover-card col-span-2 rounded-lg overflow-hidden wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.5s"
+          >
             <img
               src="./img/pic1_2.jpg"
               alt="Software Landing"
@@ -500,7 +545,7 @@
               <a
                 href="./img/pic1_2.jpg"
                 data-fancybox="gallery"
-                data-caption="Caption #1"
+                data-caption="Design 1"
               >
                 <i class="fa-solid fa-plus"></i>
               </a>
@@ -508,7 +553,10 @@
           </div>
 
           <!-- item 2 -->
-          <div class="image-hover-card rounded-lg overflow-hidden">
+          <div
+            class="image-hover-card rounded-lg overflow-hidden wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.5s"
+          >
             <img
               src="./img/pic2_1.jpg"
               alt="Software Landing"
@@ -524,7 +572,7 @@
               <a
                 href="./img/pic2_1.jpg"
                 data-fancybox="gallery"
-                data-caption="Caption #1"
+                data-caption="Design 2"
               >
                 <i class="fa-solid fa-plus"></i>
               </a>
@@ -532,7 +580,10 @@
           </div>
 
           <!-- item 3 -->
-          <div class="image-hover-card">
+          <div
+            class="image-hover-card wow animate__animated animate__fadeInUp"
+            data-wow-delay="1.5s"
+          >
             <img
               src="./img/pic3_1.jpg"
               alt="Software Landing"
@@ -548,7 +599,7 @@
               <a
                 href="./img/pic3_1.jpg"
                 data-fancybox="gallery"
-                data-caption="Caption #1"
+                data-caption="Design 3"
               >
                 <i class="fa-solid fa-plus"></i>
               </a>
@@ -556,7 +607,10 @@
           </div>
 
           <!-- item 4 -->
-          <div class="image-hover-card">
+          <div
+            class="image-hover-card wow animate__animated animate__fadeInUp"
+            data-wow-delay="1.5s"
+          >
             <img
               src="./img/pic4.jpg"
               alt="Software Landing"
@@ -572,7 +626,7 @@
               <a
                 href="./img/pic4.jpg"
                 data-fancybox="gallery"
-                data-caption="Caption #1"
+                data-caption="Design 4"
               >
                 <i class="fa-solid fa-plus"></i>
               </a>
@@ -580,7 +634,10 @@
           </div>
 
           <!-- item 5 -->
-          <div class="image-hover-card row-span-2 rounded-lg overflow-hidden">
+          <div
+            class="image-hover-card row-span-2 rounded-lg overflow-hidden wow animate__animated animate__fadeInUp"
+            data-wow-delay="1.5s"
+          >
             <img
               src="./img/pic6.jpg"
               alt="Software Landing"
@@ -596,7 +653,7 @@
               <a
                 href="./img/pic6.jpg"
                 data-fancybox="gallery"
-                data-caption="Caption #1"
+                data-caption="Design 5"
               >
                 <i class="fa-solid fa-plus"></i
               ></a>
@@ -604,7 +661,10 @@
           </div>
 
           <!-- item 6 -->
-          <div class="image-hover-card col-span-2 rounded-lg overflow-hidden">
+          <div
+            class="image-hover-card col-span-2 rounded-lg overflow-hidden wow animate__animated animate__fadeInUp"
+            data-wow-delay="2s"
+          >
             <img
               src="./img/pic5.jpg"
               alt="Software Landing"
@@ -620,7 +680,7 @@
               <a
                 href="./img/pic5.jpg"
                 data-fancybox="gallery"
-                data-caption="Caption #1"
+                data-caption="Design 6"
               >
                 <i class="fa-solid fa-plus"></i
               ></a>
@@ -796,7 +856,8 @@
     <footer class="bg-[url(/img/pattern2.png)] bg-cover bg-center">
       <!-- newsletter section -->
       <div
-        class="mx-auto max-w-[1199px] rounded-[10px] flex items-center justify-center bg-[url(/img/pattern3.png)] bg-no-repeat bg-bottom bg-[length:100%]"
+        class="mx-auto max-w-[1199px] rounded-[10px] flex items-center justify-center bg-[url(/img/pattern3.png)] bg-no-repeat bg-bottom bg-[length:100%] wow animate__animated animate__fadeInUp"
+        data-wow-delay="0.5s"
       >
         <div class="flex items-center gap-44 px-[60px] py-[50px]">
           <h2 class="text-[#262626] text-[28px] font-semibold">
@@ -809,7 +870,7 @@
               class="p-5 w-[450px] bg-white rounded-l-md text-[15px] placeholder:text-[#888] font-normal border border-white outline-none"
             />
             <button
-              class="btn-gradient text-[20px] rounded-l-none rounded-r-md font-sans"
+              class="btn-gradient text-[20px] rounded-l-none rounded-r-md font-sans hover-icon"
             >
               <i class="las la-paper-plane"></i>
             </button>
@@ -1016,9 +1077,18 @@
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
     <script>
-      Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-      });
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+
+    <!-- wowjs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
     </script>
   </body>
 </html>
